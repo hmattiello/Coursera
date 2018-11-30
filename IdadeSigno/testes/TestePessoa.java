@@ -29,7 +29,7 @@ public class TestePessoa {
 		dataNascimento.setMonth(1);
 		dataNascimento.setDate(8);		
 		henrique.setDataNascimento(dataNascimento);
-		assertEquals("Aqu√°rio",henrique.getSigno());
+		assertEquals("Aqu·rio",henrique.getSigno());
 	}
 	
 	@Test
@@ -51,7 +51,7 @@ public class TestePessoa {
 		dataNascimento.setMonth(7);
 		dataNascimento.setDate(14);		
 		jorge.setDataNascimento(dataNascimento);
-		assertEquals("Le√£o",jorge.getSigno());
+		assertEquals("Le„o",jorge.getSigno());
 	}
 	
 	@Test
