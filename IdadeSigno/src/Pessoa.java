@@ -32,29 +32,29 @@ public class Pessoa {
 	public String getSigno() {
 		String signo = null;
 		if ((dataNascimento.getMonth()==11 && dataNascimento.getDate()>=22) || (dataNascimento.getMonth()==0 && dataNascimento.getDate()<=20)){
-			signo = "CapricÃ³rnio"; 
+			signo = "Capricórnio"; 
 		}		
 		else if ((dataNascimento.getMonth()==0 && dataNascimento.getDate()>=21) || (dataNascimento.getMonth()==1 && dataNascimento.getDate()<=19)){
-			signo = "AquÃ¡rio"; 
+			signo = "Aquário"; 
 		}
 		
 		else if ((dataNascimento.getMonth()==1 && dataNascimento.getDate()>=20) || (dataNascimento.getMonth()==2 && dataNascimento.getDate()<=20)){
 			signo = "Peixes"; 
 		}		
 		else if ((dataNascimento.getMonth()==2 && dataNascimento.getDate()>=21) || (dataNascimento.getMonth()==3 && dataNascimento.getDate()<=20)){
-			signo = "Ãries"; 
+			signo = "Áries"; 
 		}
 		else if ((dataNascimento.getMonth()==3 && dataNascimento.getDate()>=21) || (dataNascimento.getMonth()==4 && dataNascimento.getDate()<=20)){
 			signo = "Touro"; 
 		}		
 		else if ((dataNascimento.getMonth()==4 && dataNascimento.getDate()>=21) || (dataNascimento.getMonth()==5 && dataNascimento.getDate()<=20)){
-			signo = "GÃªmeos"; 
+			signo = "Gêmeos"; 
 		}		
 		else if ((dataNascimento.getMonth()==5 && dataNascimento.getDate()>=21) || (dataNascimento.getMonth()==6 && dataNascimento.getDate()<=21)){
-			signo = "CÃ¢ncer"; 
+			signo = "Câncer"; 
 		}		
 		else if ((dataNascimento.getMonth()==6 && dataNascimento.getDate()>=22) || (dataNascimento.getMonth()==7 && dataNascimento.getDate()<=22)){
-			signo = "LeÃ£o"; 
+			signo = "Leão"; 
 		}
 		else if ((dataNascimento.getMonth()==7 && dataNascimento.getDate()>=23) || (dataNascimento.getMonth()==8 && dataNascimento.getDate()<=22)){
 			signo = "Virgem"; 
@@ -63,10 +63,10 @@ public class Pessoa {
 			signo = "Libra"; 
 		}		
 		else if ((dataNascimento.getMonth()==9 && dataNascimento.getDate()>=23) || (dataNascimento.getMonth()==10 && dataNascimento.getDate()<=21)){
-			signo = "EscorpiÃ£o"; 
+			signo = "Escorpião"; 
 		}		
 		else if ((dataNascimento.getMonth()==10 && dataNascimento.getDate()>=22) || (dataNascimento.getMonth()==11 && dataNascimento.getDate()<=21)){
-			signo = "SagitÃ¡rio"; 
+			signo = "Sagitário"; 
 		}		
 		return signo;		 
 	}
