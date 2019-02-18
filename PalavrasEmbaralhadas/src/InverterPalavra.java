@@ -5,7 +5,7 @@ public class InverterPalavra implements Embaralhador {
 	
 	@Override
 	public void EmbaralharPalavra(String palavra) {
-		StringBuffer sb = new StringBuffer(palavra);
+		StringBuilder sb = new StringBuilder(palavra);
 		sb.reverse();
 		palavraEmbaralhada = sb.toString();
 	}

@@ -7,8 +7,7 @@ public class TesteInverterPalavra {
 	public void testeInverterPalavra() {
 		Embaralhador palavraEmbaralhada = new InverterPalavra();
 		palavraEmbaralhada.EmbaralharPalavra("cachorro");
-		Assert.assertEquals("orrohcac",palavraEmbaralhada.getPalavraEmbaralhada());
-		//System.out.println(palavraEmbaralhada.getPalavraEmbaralhada());		
+		Assert.assertEquals("orrohcac",palavraEmbaralhada.getPalavraEmbaralhada());	
 	}
 
 }
