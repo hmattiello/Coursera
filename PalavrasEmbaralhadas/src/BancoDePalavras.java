@@ -8,7 +8,7 @@ public class BancoDePalavras {
 	static private ArrayList<String> palavras = new ArrayList<String>();
 	private String palavraEscolhida;
 	
-	public BancoDePalavras(){
+	public void montaBancoDePalavras(){
 		try{
 			FileReader arquivoPalavras = new FileReader("palavras");
 			BufferedReader lerArquivo = new BufferedReader(arquivoPalavras);
