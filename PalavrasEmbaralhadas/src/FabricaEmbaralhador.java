@@ -1,19 +1,36 @@
 import java.util.Random;
 
 public class FabricaEmbaralhador {
-
-	int embaralhador;
 	
-	public void determinaTipoEmbaralhar() {
-		Random determinadorEmbaralhar = new Random();
-		embaralhador = determinadorEmbaralhar.nextInt(50)+1;
-		if (embaralhador % 2 == 0) {
-			//PalavraLetrasParImpar
+	String palavraParaEmbaralhar;
+	BancoDePalavras palavra;
+	
+	Embaralhador embaralhador;
+	
+	String palavraEmbaralhada;
+	
+	public void determinaTipoEmbaralhar(String palavraParaEmbaralhar) {
+		this.palavraParaEmbaralhar = palavraParaEmbaralhar;
+		Random escolheEmbaralhador = new Random();
+		int idEmbaralhador = escolheEmbaralhador.nextInt(2);
+		if (idEmbaralhador == 0){
+			Embaralhador embaralhador = new InverterPalavra();
+			embaralhador.EmbaralharPalavra(palavraParaEmbaralhar);
+			palavraEmbaralhada = embaralhador.getPalavraEmbaralhada();
 		}
 		else {
-			//Inverter Palavra
+			Embaralhador embaralhador = new PalavraLetrasParImpar();
+			embaralhador.EmbaralharPalavra(palavraParaEmbaralhar);
+			palavraEmbaralhada = embaralhador.getPalavraEmbaralhada();
 		}
 	}
 	
+	public String getPalavradoBanco() {
+		return palavra.getPalavraEscolhida();
+	}
+	
+	public String getPalavraEmbaralhada() {
+		return palavraEmbaralhada;
+	}
 
 }

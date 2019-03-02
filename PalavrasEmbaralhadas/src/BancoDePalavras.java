@@ -31,8 +31,11 @@ public class BancoDePalavras {
 		palavraEscolhida = palavras.get(idPalavra);		
 	}
 	
+	public int getPalavrasInseridasBanco() {
+		return palavras.size();
+	}
+	
 	public String getPalavraEscolhida() {
 		return palavraEscolhida;
 	}
-
 }
