@@ -7,7 +7,7 @@ public class Pizza {
 	static int qtdeIngredientesMapa = 0;
 	int qtdeIngredientes = 0;
 	
-	static HashMap<String, Integer> mapaIngredientes = new HashMap<String, Integer>();
+	static HashMap<String, Integer> mapaIngredientes = new HashMap<>();
 	
 	void adicionaIngrediente(String ingrediente) {
 		this.ingrediente = ingrediente;

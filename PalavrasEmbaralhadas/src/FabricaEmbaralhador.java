@@ -5,8 +5,6 @@ public class FabricaEmbaralhador {
 	String palavraParaEmbaralhar;
 	BancoDePalavras palavra;
 	
-	Embaralhador embaralhador;
-	
 	String palavraEmbaralhada;
 	
 	public void determinaTipoEmbaralhar(String palavraParaEmbaralhar) {

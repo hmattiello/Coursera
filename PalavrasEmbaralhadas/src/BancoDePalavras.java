@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class BancoDePalavras {
-	static private ArrayList<String> palavras = new ArrayList<String>();
+	static private ArrayList<String> palavras = new ArrayList<>();
 	private String palavraEscolhida;
 	
 	public void montaBancoDePalavras(){
@@ -22,7 +22,7 @@ public class BancoDePalavras {
 			arquivoPalavras.close();
 		} catch (IOException e){
 			System.err.println("Erro na abertura do arquivo: " + e.getMessage());
-		}
+		} 
 	}
 	
 	public void palavraAleatoria(){
