@@ -24,7 +24,7 @@ public class Principal {
 		do {
 			System.out.println("");
 			System.out.println("Escolha a sua opção de jogo");
-			System.out.println("(1) - Morte Súbida. Errou, perdeu, acabou!");
+			System.out.println("(1) - Morte Súbita. Errou, perdeu, acabou!");
 			System.out.println("(2) - Três vidas. Você tem algumas chances de sobrevivência");
 			tipoJogo = in.nextLine();
 			if (tipoJogo.equals("1") || tipoJogo.equals("2")){
@@ -65,7 +65,6 @@ public class Principal {
 				System.out.println("Acertou!!");
 				System.out.println(nomeJogador +" você tem "+ mecanicaJogo.getQtdePontos()+" pontos!");
 				System.out.println(nomeJogador +" você acertou até agora "+ mecanicaJogo.getQtdePalavrasCertas() +"!");
-				System.out.println(nomeJogador +" você tem "+ mecanicaJogo.getQtdeVidas()+" vidas!");
 			}
 			else {
 				System.out.println("");
